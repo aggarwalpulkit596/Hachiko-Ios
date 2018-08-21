@@ -1,0 +1,6 @@
+framework module Pods_Hachiko {
+  umbrella header "Pods-Hachiko-umbrella.h"
+
+  export *
+  module * { export * }
+}
