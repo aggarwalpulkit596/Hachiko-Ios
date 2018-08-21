@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMaps
+//import FirebaseUI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //AIzaSyDTZvimxcTCCFZG1sb2WaSeV0krsws3WZg
+        
+        GMSServices.provideAPIKey("AIzaSyDTZvimxcTCCFZG1sb2WaSeV0krsws3WZg")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = self.window {
+            window.backgroundColor = UIColor.white
+            
+            let nav = UINavigationController()
+            let mainView = ViewController()
+            nav.viewControllers = [mainView]
+            window.rootViewController = nav
+            window.makeKeyAndVisible()
+        }
+//        FirebaseApp.configure()
+//        let authUI = FUIAuth.defaultAuthUI()
+//        // You need to adopt a FUIAuthDelegate protocol to receive callback
+//        authUI.delegate = self
+//        let providers: [FUIAuthProvider] = [
+//            FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()),
+//            ]
+//        self.authUI.providers = providers
         return true
     }
 

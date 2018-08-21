@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24CB98F06735710F4AF59D4 /* Pods_Hachiko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2E494BDE60CBBC617328C4 /* Pods_Hachiko.framework */; };
+		E5BC09B3212C02FB00A727EA /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BC09B2212C02FB00A727EA /* CustomMarkerView.swift */; };
 		E5CC10F2212B5906003D52AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CC10F1212B5906003D52AB /* AppDelegate.swift */; };
 		E5CC10F4212B5906003D52AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CC10F3212B5906003D52AB /* ViewController.swift */; };
-		E5CC10F7212B5906003D52AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CC10F5212B5906003D52AB /* Main.storyboard */; };
 		E5CC10F9212B5908003D52AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CC10F8212B5908003D52AB /* Assets.xcassets */; };
 		E5CC10FC212B5908003D52AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CC10FA212B5908003D52AB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DF648B318E38A52E5A8C91D /* Pods-Hachiko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hachiko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hachiko/Pods-Hachiko.debug.xcconfig"; sourceTree = "<group>"; };
+		AC2E494BDE60CBBC617328C4 /* Pods_Hachiko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hachiko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5BC09B2212C02FB00A727EA /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
 		E5CC10EE212B5906003D52AB /* Hachiko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hachiko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CC10F1212B5906003D52AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5CC10F3212B5906003D52AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5CC10F6212B5906003D52AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5CC10F8212B5908003D52AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5CC10FB212B5908003D52AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5CC10FD212B5908003D52AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF0A9554338CE31B096F0160 /* Pods-Hachiko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hachiko.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hachiko/Pods-Hachiko.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24CB98F06735710F4AF59D4 /* Pods_Hachiko.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59FB98186D272FB3678D8CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC2E494BDE60CBBC617328C4 /* Pods_Hachiko.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		768CF95B183462A5A357BDAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DF648B318E38A52E5A8C91D /* Pods-Hachiko.debug.xcconfig */,
+				FF0A9554338CE31B096F0160 /* Pods-Hachiko.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5CC10E5212B5906003D52AB = {
 			isa = PBXGroup;
 			children = (
 				E5CC10F0212B5906003D52AB /* Hachiko */,
 				E5CC10EF212B5906003D52AB /* Products */,
+				768CF95B183462A5A357BDAE /* Pods */,
+				59FB98186D272FB3678D8CD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +80,10 @@
 			children = (
 				E5CC10F1212B5906003D52AB /* AppDelegate.swift */,
 				E5CC10F3212B5906003D52AB /* ViewController.swift */,
-				E5CC10F5212B5906003D52AB /* Main.storyboard */,
 				E5CC10F8212B5908003D52AB /* Assets.xcassets */,
 				E5CC10FA212B5908003D52AB /* LaunchScreen.storyboard */,
 				E5CC10FD212B5908003D52AB /* Info.plist */,
+				E5BC09B2212C02FB00A727EA /* CustomMarkerView.swift */,
 			);
 			path = Hachiko;
 			sourceTree = "<group>";
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5CC1100212B5908003D52AB /* Build configuration list for PBXNativeTarget "Hachiko" */;
 			buildPhases = (
+				76581EBEBB200CA98A44D7FA /* [CP] Check Pods Manifest.lock */,
 				E5CC10EA212B5906003D52AB /* Sources */,
 				E5CC10EB212B5906003D52AB /* Frameworks */,
 				E5CC10EC212B5906003D52AB /* Resources */,
+				FDC251A2B3C7BBFA5B449DCF /* [CP] Embed Pods Frameworks */,
+				C3A13405EC52442D09E5F75F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +151,115 @@
 			files = (
 				E5CC10FC212B5908003D52AB /* LaunchScreen.storyboard in Resources */,
 				E5CC10F9212B5908003D52AB /* Assets.xcassets in Resources */,
-				E5CC10F7212B5906003D52AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76581EBEBB200CA98A44D7FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hachiko-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3A13405EC52442D09E5F75F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hachiko/Pods-Hachiko-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hachiko/Pods-Hachiko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDC251A2B3C7BBFA5B449DCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hachiko/Pods-Hachiko-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hachiko/Pods-Hachiko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5CC10EA212B5906003D52AB /* Sources */ = {
@@ -137,20 +268,13 @@
 			files = (
 				E5CC10F4212B5906003D52AB /* ViewController.swift in Sources */,
 				E5CC10F2212B5906003D52AB /* AppDelegate.swift in Sources */,
+				E5BC09B3212C02FB00A727EA /* CustomMarkerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5CC10F5212B5906003D52AB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5CC10F6212B5906003D52AB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5CC10FA212B5908003D52AB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +402,7 @@
 		};
 		E5CC1101212B5908003D52AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DF648B318E38A52E5A8C91D /* Pods-Hachiko.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +420,7 @@
 		};
 		E5CC1102212B5908003D52AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF0A9554338CE31B096F0160 /* Pods-Hachiko.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
